@@ -1,47 +1,38 @@
 const cars = [
     {
         id: 1,
-        brand: 'bla bla',
-        model: 'a',
-        color: 'red',
-        year: 1999,
-        price: 1,
+        brand: 'Audi',
+        model: 'A4',
+        color: 'Blue',
+        year: 2016,
+        price: '12,585-14,006',
         photography: 1,
     },
     {
         id: 2,
-        brand: 'bla bla',
-        model: 'a',
-        color: 'red',
-        year: 1999,
-        price: 1,
+        brand: 'Mercedes-Benz',
+        model: 'Class E',
+        color: 'White',
+        year: 2017,
+        price: '38,605-39,158',
         photography: 1,
     },
     {
         id: 3,
-        brand: 'bla bla',
-        model: 'a',
-        color: 'red',
-        year: 1999,
-        price: 1,
+        brand: 'Mazda',
+        model: 'CX-5',
+        color: 'Red',
+        year: 2015,
+        price: '9,392-10,663',
         photography: 1,
     },
     {
         id: 4,
-        brand: 'bla bla',
-        model: 'a',
-        color: 'red',
-        year: 1999,
-        price: 1,
-        photography: 1,
-    },
-    {
-        id: 5,
-        brand: 'bla bla',
-        model: 'a',
-        color: 'red',
-        year: 1999,
-        price: 1,
+        brand: 'Mitsubishi',
+        model: 'ASX',
+        color: 'White',
+        year: 2014,
+        price: '7083-8373',
         photography: 1,
     }
 ];
@@ -56,18 +47,18 @@ function printCars() {
                     <p>Model: ${car.model}</p>
                     <p>Year: ${car.year}</p>
                     <p>Color: ${car.color}</p>
-                    <p>Price: ${car.price}</p>
+                    <p>Price(in dollars): ${car.price}</p>
                     </td>
                     <td>
                         <img src="r8.jpeg" alt="example car" class="img">
-                    </td>
-                    <td>
-                        <button onclick="deleteCar(${car.id})" class="btn btn-danger">
+                        <div class="buttons-buy-delete">
+                            <button onclick="deleteCar(${car.id})" class="btn btn-danger">
                             Delete
-                        </button>
-                        <button onclick="buyCar(${car.id})" class="btn btn-danger">
+                            </button>
+                            <button onclick="buyCar(${car.id})" class="btn btn-danger">
                             <i class="fas fa-shopping-cart"></i>
-                        </button>
+                            </button>
+                        </div>
                     </td>
                 </tr>`;
     });

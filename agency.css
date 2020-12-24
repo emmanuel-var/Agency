@@ -19,9 +19,23 @@ footer div {
     justify-content: center;
     align-items: center;
 }
+th p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img {
     width: 80%;
     height:70%;
+}
+.buttons-buy-delete {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.style {
+    background-color: rgb(24, 231, 218);
+    font-family: sans-serif;
 }
 /* Extra-small devices-landscape phones */
 @media (min-width: 350px) {
