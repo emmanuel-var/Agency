@@ -37,6 +37,11 @@ th p {
     background-color: rgb(24, 231, 218);
     font-family: sans-serif;
 }
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Extra-small devices-landscape phones */
 @media (min-width: 350px) {
     .col-esm-1 {width: 8%;}

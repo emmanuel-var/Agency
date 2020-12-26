@@ -43,11 +43,11 @@ function printCars() {
     cars.forEach((car) => {
         html += `<tr>
                     <td>
-                    <p>Brand: ${car.brand}</p>
-                    <p>Model: ${car.model}</p>
-                    <p>Year: ${car.year}</p>
-                    <p>Color: ${car.color}</p>
-                    <p>Price(in dollars): ${car.price}</p>
+                        <div class="information"><p>Brand: </p><p contentEditable="true">${car.brand}</p></div>
+                        <div class="information"><p>Model: </p><p contentEditable="true">${car.model}</p></div>
+                        <div class="information"><p>Year: </p><p contentEditable="true">${car.year}</p></div>
+                        <div class="information"><p>Color: </p><p contentEditable="true">${car.color}</p></div>
+                        <div class="information"><p>Price(dollars): </p><p contentEditable="true">${car.price}</p></div>
                     </td>
                     <td>
                         <img src="r8.jpeg" alt="example car" class="img">
@@ -55,7 +55,7 @@ function printCars() {
                             <button onclick="deleteCar(${car.id})" class="btn btn-danger">
                             Delete
                             </button>
-                            <button onclick="buyCar(${car.id})" class="btn btn-danger">
+                            <button class="btn btn-danger">
                             <i class="fas fa-shopping-cart"></i>
                             </button>
                         </div>
